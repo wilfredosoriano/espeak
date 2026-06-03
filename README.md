@@ -23,7 +23,6 @@ A mobile app that helps Filipino professionals improve their business English th
 - `expo-sqlite` — local offline storage
 - `expo-notifications` — daily Word of the Day push notifications
 - Groq API (`llama-3.3-70b-versatile`) — AI content generation
-- No UI libraries — `StyleSheet` only
 
 ---
 
