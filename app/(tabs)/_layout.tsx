@@ -1,5 +1,6 @@
 import { Tabs } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
+import { Image } from 'react-native';
 import { Colors } from '../../constants/theme';
 
 type IconName = React.ComponentProps<typeof Ionicons>['name'];
@@ -23,8 +24,17 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color, focused }) => (
-            <TabIcon name={focused ? 'home' : 'home-outline'} color={color} />
+          tabBarIcon: ({ focused }) => (
+            <Image
+              source={require('../../assets/images/espeak-icon.png')}
+              style={{
+                width: 24,
+                height: 24,
+                borderRadius: 6,
+                opacity: focused ? 1 : 0.45,
+              }}
+              resizeMode="contain"
+            />
           ),
         }}
       />
