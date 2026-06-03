@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
   listContent: {
     paddingHorizontal: Spacing.horizontal,
     paddingTop: 8,
-    paddingBottom: 32,
+    paddingBottom: 110,
   },
   wordRow: {
     flexDirection: 'row',
