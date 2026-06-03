@@ -4,7 +4,7 @@
     "slug": "ESpeak",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/espeak-icon.png",
     "scheme": "espeak",
     "userInterfaceStyle": "automatic",
     "ios": {
@@ -12,26 +12,27 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "./assets/images/espeak-icon.png",
+        "backgroundColor": "#FFFFFF"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.wil.soriano.ESpeak"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/espeak-icon.png"
     },
     "plugins": [
       "expo-router",
+      "expo-sqlite",
+      "expo-notifications",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/espeak-icon.png",
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#FFFFFF"
         }
       ]
     ],
